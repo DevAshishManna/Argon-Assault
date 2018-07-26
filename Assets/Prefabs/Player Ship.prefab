@@ -317,6 +317,9 @@ MonoBehaviour:
   controlSpeed: 20
   xRange: 5
   yRange: 3
+  guns:
+  - {fileID: 1624551932947632}
+  - {fileID: 1350494416439254}
   positionPitchFactor: -5
   positionYawFactor: 5
   controlPitchFactor: -20
