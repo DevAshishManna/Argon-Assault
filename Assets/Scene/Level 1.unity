@@ -259,6 +259,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1639258750619252, guid: 286f91c196fb0ef44a34fb72438cf35b, type: 2}
   parent: {fileID: 1898905276}
+  scorePerHit: 80
+  hits: 10
 --- !u!1 &394046610 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1754910023302818, guid: 60f26d6465b822444ab5dadf5986bb35,
@@ -277,6 +279,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1639258750619252, guid: 286f91c196fb0ef44a34fb72438cf35b, type: 2}
   parent: {fileID: 1898905276}
+  scorePerHit: 12
+  hits: 10
 --- !u!4 &431093991 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4655758116509614, guid: 60f26d6465b822444ab5dadf5986bb35,
@@ -368,6 +372,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfd19acaa6de94649b33d6d14e7fe3f8, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &719978238 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1624551932947632, guid: b5ec84e0944b9444db477dd23aa2b150,
+    type: 2}
+  m_PrefabInternal: {fileID: 2048279767}
 --- !u!1001 &762426625
 Prefab:
   m_ObjectHideFlags: 0
@@ -577,6 +586,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1639258750619252, guid: 286f91c196fb0ef44a34fb72438cf35b, type: 2}
   parent: {fileID: 1898905276}
+  scorePerHit: 20
+  hits: 10
 --- !u!1 &1127471465 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1754910023302818, guid: 60f26d6465b822444ab5dadf5986bb35,
@@ -595,6 +606,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1639258750619252, guid: 286f91c196fb0ef44a34fb72438cf35b, type: 2}
   parent: {fileID: 1898905276}
+  scorePerHit: 20
+  hits: 10
 --- !u!1001 &1221644063
 Prefab:
   m_ObjectHideFlags: 0
@@ -859,6 +872,11 @@ Transform:
   m_Father: {fileID: 778214201}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1527578215 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1350494416439254, guid: b5ec84e0944b9444db477dd23aa2b150,
+    type: 2}
+  m_PrefabInternal: {fileID: 2048279767}
 --- !u!1 &1537192153 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1090395654553690, guid: e14d375f5a36551479fc2f172353b1ba,
@@ -877,6 +895,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1639258750619252, guid: 286f91c196fb0ef44a34fb72438cf35b, type: 2}
   parent: {fileID: 1898905276}
+  scorePerHit: 25
+  hits: 10
 --- !u!1001 &1552753324
 Prefab:
   m_ObjectHideFlags: 0
@@ -966,6 +986,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1639258750619252, guid: 286f91c196fb0ef44a34fb72438cf35b, type: 2}
   parent: {fileID: 1898905276}
+  scorePerHit: 20
+  hits: 10
 --- !u!1 &1636187028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1170,6 +1192,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1639258750619252, guid: 286f91c196fb0ef44a34fb72438cf35b, type: 2}
   parent: {fileID: 1898905276}
+  scorePerHit: 20
+  hits: 10
 --- !u!1001 &1718663841
 Prefab:
   m_ObjectHideFlags: 0
@@ -1655,6 +1679,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1697736710}
     m_Modifications:
+    - target: {fileID: 114004792894644166, guid: b5ec84e0944b9444db477dd23aa2b150,
+        type: 2}
+      propertyPath: guns.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4511247102353424, guid: b5ec84e0944b9444db477dd23aa2b150, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -1685,6 +1714,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4511247102353424, guid: b5ec84e0944b9444db477dd23aa2b150, type: 2}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114004792894644166, guid: b5ec84e0944b9444db477dd23aa2b150,
+        type: 2}
+      propertyPath: guns.Array.data[0]
+      value: 
+      objectReference: {fileID: 719978238}
+    - target: {fileID: 114004792894644166, guid: b5ec84e0944b9444db477dd23aa2b150,
+        type: 2}
+      propertyPath: guns.Array.data[1]
+      value: 
+      objectReference: {fileID: 1527578215}
+    - target: {fileID: 1910925014589458, guid: b5ec84e0944b9444db477dd23aa2b150, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624551932947632, guid: b5ec84e0944b9444db477dd23aa2b150, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350494416439254, guid: b5ec84e0944b9444db477dd23aa2b150, type: 2}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
